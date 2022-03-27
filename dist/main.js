@@ -126,7 +126,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _front_page__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./front_page */ \"./src/front_page.js\");\n/* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./menu */ \"./src/menu.js\");\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n\n\n\n\n(0,_front_page__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n\nlet homeButt = document.querySelector('.home');\nhomeButt.addEventListener('click', _front_page__WEBPACK_IMPORTED_MODULE_0__[\"default\"]);\nlet menuButt = document.querySelector('.menu');\nmenuButt.addEventListener('click', _menu__WEBPACK_IMPORTED_MODULE_1__[\"default\"]);\nlet contactButt = document.querySelector('.contact');\ncontactButt.addEventListener('click', _front_page__WEBPACK_IMPORTED_MODULE_0__[\"default\"]);\n\n\nconsole.log('hello')\n\n//# sourceURL=webpack://restaurant_webpack/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _front_page__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./front_page */ \"./src/front_page.js\");\n/* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./menu */ \"./src/menu.js\");\n/* harmony import */ var _resetDOM__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./resetDOM */ \"./src/resetDOM.js\");\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n\n\n\n\n\n(0,_front_page__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n\nlet homeButt = document.querySelector('.home');\nhomeButt.addEventListener('click', () => {\n  (0,_resetDOM__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\n  (0,_front_page__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n});\n\nlet menuButt = document.querySelector('.menu');\nmenuButt.addEventListener('click', () => {\n  (0,_resetDOM__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\n  (0,_menu__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n});\n\nlet contactButt = document.querySelector('.contact');\ncontactButt.addEventListener('click', _front_page__WEBPACK_IMPORTED_MODULE_0__[\"default\"]);\n\n\nconsole.log('hello')\n\n//# sourceURL=webpack://restaurant_webpack/./src/index.js?");
 
 /***/ }),
 
@@ -137,6 +137,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _fro
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction menu() {\n  let restaurantName = document.createElement('h1');\n  let restaurantPic = document.createElement('img');\n  let content = document.getElementById('content');\n\n  restaurantName.textContent = 'Picture Gallery'\n  content.appendChild(restaurantName);\n\n  restaurantPic.src = '../loes-klinker-gPzixog6XLg-unsplash.jpg'\n  restaurantPic.alt = 'viet food'\n  content.appendChild(restaurantPic);\n\n  restaurantPic.src = '../loes-klinker-gPzixog6XLg-unsplash.jpg'\n  restaurantPic.alt = 'viet food'\n  content.appendChild(restaurantPic);\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (menu);\n\n//# sourceURL=webpack://restaurant_webpack/./src/menu.js?");
+
+/***/ }),
+
+/***/ "./src/resetDOM.js":
+/*!*************************!*\
+  !*** ./src/resetDOM.js ***!
+  \*************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction reset() {\n  let content = document.querySelector('#content')\n  while(content.firstChild) {\n    content.removeChild(content.firstChild);\n  }\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (reset);\n\n\n/* let reset = () => {\n  let content = document.getElementById('content');\n  let container = document.getElementsByClassName('container')[0];\n  container.remove();\n  content.className = '';\n  let buttons = document.getElementsByTagName('button');\n  for (let i = 0; i< buttons.length; i++) {\n    buttons[i].className = \"\";\n  }\n}\n\nexport default reset; */\n\n//# sourceURL=webpack://restaurant_webpack/./src/resetDOM.js?");
 
 /***/ })
 
