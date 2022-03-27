@@ -1,7 +1,7 @@
 {/* <h1>Yummy food place name insert here now plz</h1>
 <img src="../loes-klinker-gPzixog6XLg-unsplash.jpg" alt="viet grilled pork with rice noodles"> */}
 
-function front_page() {
+function home() {
   let restaurantName = document.createElement('h1');
   let restaurantDesc = document.createElement('p');
   let restaurantPic = document.createElement('img');
@@ -17,4 +17,4 @@ function front_page() {
   content.appendChild(restaurantPic);
 } 
 
-export default front_page;
+export default home;

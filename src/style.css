@@ -1,3 +1,14 @@
+main {
+  border: 5px dotted skyblue;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 img {
   height: 100px;
   width: 100px;
