@@ -9,8 +9,12 @@ function front_page() {
   
   restaurantName.textContent = 'Daygo Dining'
   restaurantDesc.textContent = 'Yummy food place, number 1!'
+  restaurantPic.src = '../loes-klinker-gPzixog6XLg-unsplash.jpg'
+  restaurantPic.alt = 'viet food'
   
+  content.appendChild(restaurantName);
   content.appendChild(restaurantDesc);
+  content.appendChild(restaurantPic);
 } 
 
 export default front_page;
