@@ -6,15 +6,19 @@ function home() {
   let restaurantDesc = document.createElement('p');
   let restaurantPic = document.createElement('img');
   let content = document.getElementById('content');
+  let contain = document.createElement('section');
+
+  contain.classList.add('contain')
   
   restaurantName.textContent = 'Daygo Dining'
   restaurantDesc.textContent = 'Yummy food place, number 1!'
   restaurantPic.src = '../loes-klinker-gPzixog6XLg-unsplash.jpg'
   restaurantPic.alt = 'viet food'
   
-  content.appendChild(restaurantName);
-  content.appendChild(restaurantDesc);
-  content.appendChild(restaurantPic);
+  content.appendChild(contain);
+  contain.appendChild(restaurantName);
+  contain.appendChild(restaurantDesc);
+  contain.appendChild(restaurantPic);
 } 
 
 export default home;

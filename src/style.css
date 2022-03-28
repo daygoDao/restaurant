@@ -3,6 +3,7 @@ main {
 }
 
 #content {
+  border: 3px dotted rgb(140, 235, 140);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -12,4 +13,12 @@ main {
 img {
   height: 100px;
   width: 100px;
+}
+
+.contain {
+  border: 4px dotted salmon;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

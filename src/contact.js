@@ -6,7 +6,7 @@ function contact() {
   let infoEmail = document.createElement('p');
   
   let content = document.getElementById('content');
-  let contain = document.getElementById('content');
+  let contain = document.createElement('section');
 
   title.textContent = 'contact info';
   picture.src = '#';
@@ -15,11 +15,15 @@ function contact() {
   infoPhone.textContent = 'Phone: 619-000-0000'
   infoEmail.textContent = 'email: daygodiner@notreal.srsly'
 
-  content.appendChild(title);
-  content.appendChild(picture);
-  content.appendChild(hours);
-  content.appendChild(infoPhone);
-  content.appendChild(infoEmail);
+  
+  contain.appendChild(title);
+  contain.appendChild(picture);
+  contain.appendChild(hours);
+  contain.appendChild(infoPhone);
+  contain.appendChild(infoEmail);
+
+  contain.classList.add('contain')
+  content.appendChild(contain);
 
 }
 
