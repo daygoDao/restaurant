@@ -1,5 +1,6 @@
 import home from './front_page'
 import menu from './menu'
+import contact from './contact'
 import reset from './resetDOM'
 import './style.css'
 
@@ -18,7 +19,10 @@ menuButt.addEventListener('click', () => {
 });
 
 let contactButt = document.querySelector('.contact');
-contactButt.addEventListener('click', home);
+contactButt.addEventListener('click', () => {
+  reset();
+  contact();
+});
 
 
 console.log('hello')

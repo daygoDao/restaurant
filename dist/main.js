@@ -110,6 +110,16 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 
 /***/ }),
 
+/***/ "./src/contact.js":
+/*!************************!*\
+  !*** ./src/contact.js ***!
+  \************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction contact() {\n  let title = document.createElement('h1');\n  let picture = document.createElement('img');\n  let hours = document.createElement('p');\n  let infoPhone = document.createElement('p');\n  let infoEmail = document.createElement('p');\n  \n  let content = document.getElementById('content');\n  let contain = document.getElementById('content');\n\n  title.textContent = 'contact info';\n  picture.src = '#';\n  picture.alt = 'more food';\n  hours.textContent = '8:00am-8:00pm';\n  infoPhone.textContent = 'Phone: 619-000-0000'\n  infoEmail.textContent = 'email: daygodiner@notreal.srsly'\n\n  content.appendChild(title);\n  content.appendChild(picture);\n  content.appendChild(hours);\n  content.appendChild(infoPhone);\n  content.appendChild(infoEmail);\n\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (contact);\n\n//# sourceURL=webpack://restaurant_webpack/./src/contact.js?");
+
+/***/ }),
+
 /***/ "./src/front_page.js":
 /*!***************************!*\
   !*** ./src/front_page.js ***!
@@ -126,7 +136,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _front_page__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./front_page */ \"./src/front_page.js\");\n/* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./menu */ \"./src/menu.js\");\n/* harmony import */ var _resetDOM__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./resetDOM */ \"./src/resetDOM.js\");\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n\n\n\n\n\n(0,_front_page__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n\nlet homeButt = document.querySelector('.home');\nhomeButt.addEventListener('click', () => {\n  (0,_resetDOM__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\n  (0,_front_page__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n});\n\nlet menuButt = document.querySelector('.menu');\nmenuButt.addEventListener('click', () => {\n  (0,_resetDOM__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\n  (0,_menu__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n});\n\nlet contactButt = document.querySelector('.contact');\ncontactButt.addEventListener('click', _front_page__WEBPACK_IMPORTED_MODULE_0__[\"default\"]);\n\n\nconsole.log('hello')\n\n//# sourceURL=webpack://restaurant_webpack/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _front_page__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./front_page */ \"./src/front_page.js\");\n/* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./menu */ \"./src/menu.js\");\n/* harmony import */ var _contact__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./contact */ \"./src/contact.js\");\n/* harmony import */ var _resetDOM__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./resetDOM */ \"./src/resetDOM.js\");\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n\n\n\n\n\n\n(0,_front_page__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n\nlet homeButt = document.querySelector('.home');\nhomeButt.addEventListener('click', () => {\n  (0,_resetDOM__WEBPACK_IMPORTED_MODULE_3__[\"default\"])();\n  (0,_front_page__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n});\n\nlet menuButt = document.querySelector('.menu');\nmenuButt.addEventListener('click', () => {\n  (0,_resetDOM__WEBPACK_IMPORTED_MODULE_3__[\"default\"])();\n  (0,_menu__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n});\n\nlet contactButt = document.querySelector('.contact');\ncontactButt.addEventListener('click', () => {\n  (0,_resetDOM__WEBPACK_IMPORTED_MODULE_3__[\"default\"])();\n  (0,_contact__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\n});\n\n\nconsole.log('hello')\n\n//# sourceURL=webpack://restaurant_webpack/./src/index.js?");
 
 /***/ }),
 
@@ -146,7 +156,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction reset() {\n  let content = document.querySelector('#content')\n  while(content.firstChild) {\n    content.removeChild(content.firstChild);\n  }\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (reset);\n\n\n/* let reset = () => {\n  let content = document.getElementById('content');\n  let container = document.getElementsByClassName('container')[0];\n  container.remove();\n  content.className = '';\n  let buttons = document.getElementsByTagName('button');\n  for (let i = 0; i< buttons.length; i++) {\n    buttons[i].className = \"\";\n  }\n}\n\nexport default reset; */\n\n//# sourceURL=webpack://restaurant_webpack/./src/resetDOM.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction reset() {\n  let content = document.querySelector('#content')\n  while(content.firstChild) {\n    content.removeChild(content.firstChild);\n  }\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (reset);\n\n\n\n//# sourceURL=webpack://restaurant_webpack/./src/resetDOM.js?");
 
 /***/ })
 
