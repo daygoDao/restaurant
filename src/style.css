@@ -70,6 +70,13 @@ h1 {
 
 .food_gallery {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
   gap: 8px;
+}
+
+.food_gallery img {
+  height: 200px;
+  width: 200px;
 }
