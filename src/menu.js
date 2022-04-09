@@ -20,6 +20,15 @@ function menu() {
     foodGallery.appendChild(restaurantPic);
   }
   contain.append(foodGallery)
+
+  //buttons to traverse through food
+  //loops back to 0th index after the end of picture array is reached
+  const rightButton = document.createElement('button');
+  const leftButton = document.createElement('button');
+  leftButton.textContent = '<'
+  rightButton.textContent = '>'
+  contain.append(leftButton)
+  contain.append(rightButton)
 }
 
 export default menu;
