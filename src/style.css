@@ -1,6 +1,23 @@
-nav ul{
-  list-style: none;
+nav button {
+  color:red;
+  padding: 10px;
+}
+
+nav li {
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  gap: 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  padding: 0 35%;
 }
 nav {
   border: 3px dotted rgb(140, 235, 140);
@@ -8,7 +25,7 @@ nav {
 
 main {
   border: 5px dotted skyblue;
-  background-image: url('../images/background.jpg');
+  background-image: url("../images/background.jpg");
   background-size: 100%;
   object-fit: contain;
   width: 100%;
