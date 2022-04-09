@@ -20,11 +20,9 @@ function menu() {
     restaurantPic.src = `../images/${pictures[picturesIndex]}.jpg`;
     restaurantPic.alt = "viet food";
     foodGallery.appendChild(restaurantPic);
-  
+
     contain.append(foodGallery);
   }
-
-  showFood(0);
 
   //buttons to traverse through food
   //loops back to 0th index after the end of picture array is reached
@@ -32,26 +30,34 @@ function menu() {
   const leftButton = document.createElement("button");
   leftButton.textContent = "<";
   rightButton.textContent = ">";
-  leftButton.addEventListener('click',leftPicture)
-  rightButton.addEventListener('click',rightPicture)
+  leftButton.addEventListener("click", leftPicture);
+  rightButton.addEventListener("click", rightPicture);
 
-  function leftPicture() {
-    if(index == 0) {
+  function leftPicture(e) {
+    index--;
+    if (index < 0) {
       index = pictures.length;
     }
-    index--;
+    resetPicture();
     showFood(index);
   }
   function rightPicture() {
-    if(index == pictures.length - 1) {
+    index++;
+    if (index > pictures.length - 1) {
       index = 0;
     }
-    index++;
+    console.log(index);
+    resetPicture();
     showFood(index);
+  }
+  function resetPicture() {
+    foodGallery.removeChild(foodGallery.lastChild);
   }
 
   contain.append(leftButton);
   contain.append(rightButton);
+
+  showFood(0);
 }
 
 export default menu;
