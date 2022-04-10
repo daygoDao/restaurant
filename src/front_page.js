@@ -15,7 +15,7 @@ function home() {
 
   restaurantName.textContent = "Daygo Dining";
   restaurantDesc.textContent = "Yummy food place, number 1!";
-  restaurantPic.src = "../images/pho.jpg";
+  restaurantPic.src = "images/pho.jpg";
   restaurantPic.alt = "viet food";
 
   content.appendChild(contain);

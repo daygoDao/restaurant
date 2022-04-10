@@ -1,4 +1,23 @@
 function menu() {
+  // create object of food item
+  const menuItem = (name, desc) => {
+    const food = document.createElement("food");
+    food.textContent = `test for ${name}`;
+
+    return food;
+  };
+
+  // menu list of food items to add by DOM
+  const menuList = () => {
+    let content = document.getElementById("content");
+    content.appendChild(menuItem("test", "test1"));
+  };
+
+  // load everything
+  const loadMenu = () => {};
+
+  menuList();
+
   const pictures = ["pho", "clams", "pork_assorted", "sexybowl"];
   let index = 0;
 
@@ -17,7 +36,7 @@ function menu() {
   function showFood(picturesIndex) {
     let restaurantPic = document.createElement("img");
 
-    restaurantPic.src = `../images/${pictures[picturesIndex]}.jpg`;
+    restaurantPic.src = `images/${pictures[picturesIndex]}.jpg`;
     restaurantPic.alt = "viet food";
     foodGallery.appendChild(restaurantPic);
 
