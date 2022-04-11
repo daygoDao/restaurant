@@ -1,4 +1,4 @@
-function menu() {
+function gallery() {
 
   const pictures = ["pho", "clams", "pork_assorted", "sexybowl"];
   let index = 0;
@@ -61,4 +61,4 @@ function menu() {
   showFood(0);
 }
 
-export default menu;
+export default gallery;

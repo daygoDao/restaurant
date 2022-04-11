@@ -19,6 +19,12 @@ menuButt.addEventListener('click', () => {
   menu();
 });
 
+let galleryButt = document.querySelector('.gallery');
+galleryButt.addEventListener('click', () => {
+  reset();
+  gallery();
+});
+
 let contactButt = document.querySelector('.contact');
 contactButt.addEventListener('click', () => {
   reset();
