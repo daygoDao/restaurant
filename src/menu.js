@@ -28,8 +28,12 @@ function menu() {
     menuDOM.classList.add("menu");
 
     menuDOM.appendChild(food("pho", "its pho dude"));
-    menuDOM.appendChild(food("pho", "savory beef soup with thic rice noodles"));
-    menuDOM.appendChild(food("pho", "savory beef soup with thic rice noodles"));
+    menuDOM.appendChild(food("clams", "wham bam thank ya clams"));
+    menuDOM.appendChild(food("clams", "wham bam thank ya clams"));
+    menuDOM.appendChild(food("clams", "wham bam thank ya clams"));
+    menuDOM.appendChild(food("sexybowl", "grilled pork with rice noodles and lush herbs and veggies all ties together with a sweet spicy fish sauce"));
+    menuDOM.appendChild(food("sexybowl", "grilled pork with rice noodles and lush herbs and veggies all ties together with a sweet spicy fish sauce"));
+    menuDOM.appendChild(food("sexybowl", "grilled pork with rice noodles and lush herbs and veggies all ties together with a sweet spicy fish sauce"));
 
     return menuDOM;
   };
