@@ -1,5 +1,6 @@
 import home from './front_page'
 import menu from './menu'
+import gallery from './gallery'
 import contact from './contact'
 import reset from './resetDOM'
 import './style.css'
