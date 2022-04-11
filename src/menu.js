@@ -28,6 +28,8 @@ function menu() {
     menuDOM.classList.add("menu");
 
     menuDOM.appendChild(food("pho", "its pho dude"));
+    menuDOM.appendChild(food("pho", "savory beef soup with thic rice noodles"));
+    menuDOM.appendChild(food("pho", "savory beef soup with thic rice noodles"));
 
     return menuDOM;
   };
@@ -35,9 +37,7 @@ function menu() {
   // function to create and load menu to page
   // const displayMenu = () => {};
   // console.log(createMenu());
-  document
-    .querySelector("#content")
-    .appendChild(food("pho", "savory beef soup with thic rice noodles"));
+  document.querySelector("#content").appendChild(createMenu())
 }
 
 export default menu;
