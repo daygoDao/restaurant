@@ -7,25 +7,25 @@ import './style.css'
 
 home();
 
-let homeButt = document.querySelector('.home');
+let homeButt = document.querySelector('.homeButt');
 homeButt.addEventListener('click', () => {
   reset();
   home();
 });
 
-let menuButt = document.querySelector('.menu');
+let menuButt = document.querySelector('.menuButt');
 menuButt.addEventListener('click', () => {
   reset();
   menu();
 });
 
-let galleryButt = document.querySelector('.gallery');
+let galleryButt = document.querySelector('.galleryButt');
 galleryButt.addEventListener('click', () => {
   reset();
   gallery();
 });
 
-let contactButt = document.querySelector('.contact');
+let contactButt = document.querySelector('.contactButt');
 contactButt.addEventListener('click', () => {
   reset();
   contact();
